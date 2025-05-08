@@ -1,5 +1,3 @@
-// problem-1
-
 function formatString(input: string, toUpper?: boolean): string {
   if (toUpper === false) {
     return input.toLowerCase();
@@ -8,14 +6,12 @@ function formatString(input: string, toUpper?: boolean): string {
   }
 }
 
-//  problem -2
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
   return items.filter((item) => item.rating >= 4);
 }
 
-//  problem-3
 type GenericArray<T> = Array<T>;
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   const result: T[] = [];
@@ -25,7 +21,6 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
   return result;
 }
 
-//problem- 4
 class Vehicle {
   private make: string;
   private year: number;
@@ -48,8 +43,6 @@ class Car extends Vehicle {
   }
 }
 
-//problem-5
-
 function processValue(value: string | number): number {
   if (typeof value === "string") {
     return value.length;
@@ -59,8 +52,6 @@ function processValue(value: string | number): number {
     throw new Error("please give a string or number");
   }
 }
-
-// problem-6
 
 interface Product {
   name: string;
@@ -78,8 +69,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   }
   return mostExpensive;
 }
-
-// problem -7
 
 enum Day {
   Monday,
@@ -100,8 +89,6 @@ function getDayType(day: Day): string {
       return "Weekday";
   }
 }
-
-// problem- 8
 
 async function squareAsync(n: number): Promise<number> {
   if (n < 0) {
